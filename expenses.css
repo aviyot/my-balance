@@ -37,41 +37,53 @@ button:focus{
 }
 
 .item{
-    position: absolute;
-font-size:16px;
-width:20%;
+position: absolute;
+width:28%;
 margin:5px;
 height:80%;
-left: 50%;
+left: 60%;
 /* background-color: inherit;
 border-style: none;*/
 }
 
-.data {
-    position: absolute;
-    font-size:16px;
-    width:50%;
-    height:80%;
-    left: 0%;
-    }
- 
-
-
-.edit{
-    position: absolute;
-    width:15%;
-    height:80%;
-    left: 70%;
-
+.data,.item,.del,.edit{
+position:absolute;
+padding:5px;
+margin:5px;
+height:80%;
 }
 
+.data {
+    font-size:16px;
+    width:58%;
+    left: 0%;
+    }
+ .menu{
+ position:absolute;
+ width:10%;
+ left:90%;
+ height:100%;
+ }
+ .edit,.del{
+ width:200%;
+ z-index:1;
+ left:-200%;
+ height:80%;
+ display:none;
+ }
+ .menuSimbol{
+ position:relative;
+ font-size:xx-large;
+ z-index:3;
+ left:50%;
+ }
+ 
+.edit{
+    top:0%;
+}
 .del {
-    position: absolute;
-    width:15%;
-    height:80%;
-    left: 85%;
-   
     color: red;
+    top:100%;
 }
 
 
@@ -122,5 +134,3 @@ bottom: 0;
 left:0;
 font-size: xx-large;
 }
-
-
